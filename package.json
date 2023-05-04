@@ -1,0 +1,19 @@
+{
+  "name": "windows-icons",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@types/winreg": "^1.2.32",
+    "electron": "^24.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "winreg": "^1.2.4"
+  }
+}
