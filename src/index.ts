@@ -34,6 +34,10 @@ app.whenReady().then(async () => {
 	const extensions = await getExtensions();
 	const outDir = path.join(__dirname, "..", "out");
 
+	if (!fs.existsSync(outDir)) {
+		fs.mkdirSync(outDir);
+	}
+
 	console.log("Fetching icons for the following extensions", extensions);
 
 
